@@ -1,0 +1,26 @@
+{
+  "name": "multibank-qa-automation",
+  "version": "1.0.0",
+  "description": "Production-grade UI automation framework for mb.io using Playwright + TypeScript",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:headed": "npx playwright test --headed --project=chromium",
+    "test:report": "npx playwright show-report",
+    "test:allure": "npx allure generate allure-results -o allure-report --clean",
+    "test:allure:open": "npx allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.0",
+    "allure-playwright": "^3.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
